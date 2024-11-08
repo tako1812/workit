@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Workit landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..
+      144,400;9..144,600;9..144,700&family=Inter:wght@400;500;700&
+      family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..
+144,400;9..144,600;9..144,700&family=Inter:wght@400;500;700&family=
+Manrope&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Fraunces", "Manrope", sans-serif;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      header {
+        background-color: #24053e;
+
+      }
+      .nav-container {
+        max-width: 120rem;
+        padding: 1.4rem 12rem;
+        margin: 0 auto;
+        color: #fff;
+      
+
+        display: flex;
+        justify-content: space-between;
+      }
+      .link:link,
+      .link:visited {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1rem;
+      }
+      .link.cta:link,
+      .link.cta:visited {
+        border-bottom: 1px solid #44ffa1;
+        color: #fff;
+        font-weight: normal;
+        padding-bottom: 0.2rem;
+      
+      }
+      .link.cta:hover,
+      .link.cta:active {
+        color: #44ffa1;
+      }
+
+      .link.btn:link,
+      .link.btn:visited {
+        padding: 0.8rem 1.2rem;
+        color: #100101fc;
+        background-color: #44ffa1;
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+      .link.btn:hover,
+      .link.btn:active {
+        background-color: #24053e;
+        color: #44ffa1;
+        border: 1px solid #44ffa1;
+      }
+      .nav-logo {
+        height: 1.2rem;
+        
+      }
+        /*********************************/
+       /*********************************/
+      /*********************************/
+     /*       section hero            */
+
+      .section-hero {
+        background-color: #24053e;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+        height:100vh;
+        border-radius: 0 0 10% 10%;
+        /*direction: rtl;*/
+        
+        /*border-bottom-left-radius: 100rem 10rem;
+        border-bottom-right-radius: 100rem 10rem;*/
+        /*border-bottom-right-radius: 20%;*/
+        
+
+      }
+      .heading-primary {
+        font-size: 5.2rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .heading-primary span{
+        display: inline-block;
+        border-bottom: 2px solid #44ffa1;
+        border-spacing: 5px;
+  
+      }
+      .img-pattern1 {
+        position: absolute;
+        left: 0;
+        top: 30%;
+        transform: translate(-30%,-40%);
+        width: 20rem;
+
+        
+      }
+      .img-pattern2 {
+        position: absolute;
+        right: 0;
+        bottom: 40%;
+        transform: translate(30%);
+        width: 10rem;
+
+      }
+      .hero-img {
+        height: 40rem; 
+        position: absolute;  
+        bottom: 20%;    
+        transform: translate(-10%, 70%); 
+      }
+      .heading-box {
+        position: absolute;
+        right: 40%;
+        transform: translate(0, 30%); 
+        text-align: center;
+
+      }
+      /*.section-hero {
+        height: 80vh;
+      }*/
+    /*********************************/
+     /******************************/
+    /********************************/
+    /* section how*/
+    .section-how {
+      padding: 8rem 3.2rem;
+      background-color: #FCF8FF;
+
+    }
+    .container {
+      /*max-width: 120rem;*/
+      padding: 1.4rem 9.6rem;
+      margin: 0 auto;
+
+      /*margin: 0 auto;  grid კონტეინერი გაცენტრდა, width არ უნდა კონტეინ.
+      კონტენტი განსაზღვრავს სიგანეს */
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      width: 70%;
+      gap: 2.2rem;
+  
+      text-align: center;     /*cell-ში გაცენტრდება ტექსტები |  1  | */
+      height: 15rem;
+    }
+
+    .number {
+      border: 0.9px solid #584d62;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      text-align: center; 
+      font-weight: 500;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;   /*  |  1  | ესე შუაში მოექცა 1 */
+
+      margin-bottom: 3.2rem;
+    }
+    .heading-secondary {
+    font-size: 1.5rem;
+    font-weight:600;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.5px;
+   }
+
+   .text-description {
+   font-size: 0.9rem;
+   letter-spacing: 0.5px;
+   font-family: "Manrope";
+  }
+/*********************************/
+/******************************/
+/********************************/
+/* testimonial section */
+.section-testimonials {
+  padding: 13rem 3.2rem;
+  }
+  .container-testimonial {
+    max-width: 120rem;
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    position:relative;
+  }
+  .textimonial-box {
+    background-color: #24053e;
+    width: 35rem;
+    height: 18rem;
+    padding: 3.2rem;
+
+    display:flex;
+    flex-direction: column;
+
+    
+  }
+  .testimonial-img {
+    height: 25rem;
+    position: absolute;
+    top: 0;
+    transform:translate(-80%, -50%);
+    z-index: -1;
+  }
+  .testimonial-heading {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    
+  }
+  .testimonial-text {
+    font-size: 0.8rem;
+    color: #fff;
+    margin-bottom: 1.9rem;
+    line-height: 1.8;
+  }
+  .img-pattern {
+    width: 10rem;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(180%, 130%);
+    
+  }
+  .btn-last {
+    align-self: flex-start;
+  }
+/*********************************/
+/********************************/
+/*******************************/
+/*    footer    */
+
+  .footer {
+    padding: 5rem 3.2rem;
+  }
+  .footer-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.2rem;
+
+  }
+  .icon-container img {
+    height: 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <img
+          class="nav-logo"
+          src="images/logo-light.svg"
+          alt="workit panding page logo"
+        />
+        <a href="#" class="link cta">Apply for access</a>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <div class="heading-box">
+            <h1 class="heading-primary">Data <span>tailored</span> to </br>your needs.</h1>
+            <a class="link btn" href="#">Learn more</a>
+          </div>
+          <img class="img-pattern1" src="images/bg-pattern-1.svg" alt="pattern1" />
+          <img class="img-pattern2" src="images/bg-pattern-2.svg" alt="pattern2" />
+          <img class="hero-img" src="images/image-hero.webp" />
+        </div>
+      </section>
+      <section class="section-how">
+          <div class="container">
+            <div>
+              <p class="number">1</p>
+              <h2 class="heading-secondary">Actionable insights</h2>
+              <p class="text-description">
+                Optimize your products, improve customer satisfaction and stay
+                ahead of the competition with our product data analytics.
+              </p>
+            </div>
+            <div>
+              <p class="number">2</p>
+              <h2 class="heading-secondary">Data-driven decisions</h2>
+              <p class="text-description">
+                Make data-driven decisions with our product data analytics Our
+                AI-generated reports help you unlock insights hidden in your
+                product data.
+            </p>
+          </div>
+          <div>
+            <p class="number">3</p>
+            <h2 class="heading-secondary">Always affordable</h2>
+            <p class="text-description">
+              pricing that scales with your business.Get top-quality product
+              data analytics services without hidden costs or unexpected fees.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-testimonials">
+        <div class="container-testimonial"> 
+          <div class="img-box">
+            <img class="testimonial-img" src="images/image-founder.webp" />
+          </div>
+          <div class="textimonial-box">
+            <h2 class="testimonial-heading">Be the first to test Hi</h2>
+            <p class="testimonial-text">
+              I'm Louis Graham, the founder of the company. Book a demo call with
+              me to become a beta tester for our app and kickstart your company.
+              Apply for access below and I’ll be in touch to schedule a call.
+            </p>
+            <a href="#" class="link btn btn-last">Apply for access</a>
+            <img class="img-pattern"src="images/bg-pattern-3.svg">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container"> 
+        <img class=""src="images/logo-dark.svg" alt="workit landing logo" />
+        <div class="icon-container">
+          <img src="images/icon-facebook.svg" alt="facebook-icon" />
+          <img src="images/icon-instagram.svg" alt="instagram-icon" />
+          <img src="images/icon-twitter.svg" alt="twitter-icon"/>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="730" viewBox="0 0 1440 730" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H1440V662C1440 662 1082.96 730 722 730C361.039 730 0 662 0 662V0Z" fill="#24053E"/>
+      </svg>
+    </footer>
+  </body>
+</html>
